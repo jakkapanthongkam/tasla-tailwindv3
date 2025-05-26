@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testls UI Clone</title>
-  <link rel="stylesheet" href="./output.css">
-</head>
-
-<body>
-  <!-- Header & Model 3-->
+<template>
+  <!-- Header & Model 3 -->
   <div
-    class="relative bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg')]  h-screen w-screen  bg-center bg-cover">
+    class="relative bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg')]  h-screen w-screen bg-center bg-cover">
     <div class="relative pt-5 md:px-8 px-4 flex justify-between font-bold items-center">
 
       <div class="flex items">
@@ -33,7 +23,6 @@
         </ul>
       </div>
 
-
       <div class="">
         <ul class="flex space-x-2 text-sm">
           <li class="py-1 px-3 hover:bg-slate-300 hover:rounded-full cursor-pointer">Shop</li>
@@ -50,25 +39,54 @@
     </div>
 
     <div class="absolute bottom-[3%] left-[50%] translate-x-[-50%] px-4 w-full flex flex-col gap-5 items-center">
-
       <div class="w-full md:w-[50%] flex flex-col md:flex-row gap-3">
         <button class="bg-white/[.7] w-full py-2 text-black rounded-[2px] ">Order Now</button>
         <button class="bg-black/[.7] w-full py-2 rounded-[2px]">Demo Drive</button>
       </div>
-
       <div class="">
         <p class="text-[12px] text-center">*Excludes taxes and fees with price subject to change. Available in select
           states. <span class="underline underline-offset-4 cursor-pointer">See Details</span>
         </p>
       </div>
+    </div>
+  </div><!-- End Header & Model 3-->
 
+  <!-- Header & Model Y -->
+  <div
+    class="relative bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-LHD-6.22.jpg')]  h-screen w-screen  bg-center bg-cover">
+    <div class="absolute top-36 left-[50%] translate-x-[-50%]  text-center">
+      <h1 class="text-[40px] text-bold">Model S</h1>
+      <p class="weight-[400] text-[20px] text-light m-[-10px]">From $71,090*</p>
     </div>
 
+    <div class="absolute bottom-[3%] left-[50%] translate-x-[-50%] px-4 w-full flex flex-col gap-5 items-center">
+      <div class="w-full md:w-[50%] flex flex-col md:flex-row gap-3">
+        <button class="bg-white/[.7] w-full py-2 text-black rounded-[2px] ">Order Now</button>
+        <button class="bg-black/[.7] w-full py-2 rounded-[2px]">Demo Drive</button>
+      </div>
+      <div class="">
+        <p class="text-[12px] text-center">*Excludes taxes and fees with price subject to change. Available in select
+          states. <span class="underline underline-offset-4 cursor-pointer">See Details</span>
+        </p>
+      </div>
+    </div>
+  </div><!-- End Header & Model Y -->
 
+  <footer class="flex pb-6 content-center items-center justify-center bg-slate-500 pt-6">
+    <ul class="flex flex-col justify-center items-center md:flex-row gap-2">
+      <li class="link text-sm">Tesla &copy 2023</li>
+      <li class="link text-sm">Privacy & Legal</li>
+      <li class="link text-sm">Contact</li>
+      <li class="link text-sm">Careers</li>
+      <li class="link text-sm">News</li>
+      <li class="link text-sm hidden md:inline">Engage Location</li>
+      <li class="link text-sm hidden md:inline">Tesla &copy 2023</li>
+    </ul>
+  </footer>
+</template>
 
-
-
-  </div>
-</body>
-
-</html>
+<script>
+export default {
+  name: 'App'
+}
+</script>
