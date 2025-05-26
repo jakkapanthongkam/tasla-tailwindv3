@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Gotham Book";
-  src: url("../../public/GothamBook.ttf");
+  src: url("./GothamBook.ttf");
 }
 
 @font-face {
   font-family: "Gotham Bold";
-  src: url("../../public/GothamBold.ttf");
+  src: url("./GothamBold.ttf");
 }
 
 * {
